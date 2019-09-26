@@ -1,0 +1,19 @@
+################################################
+#
+# application.yml
+# https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+#
+################################################
+
+management:
+  server:
+    port: 8080
+  endpoints:
+    web:
+      base-path: /actuator
+    exposure:
+      include: health
+logging:
+  level:
+    org.springframework: INFO
+    root: INFO
